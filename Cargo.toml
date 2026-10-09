@@ -1,0 +1,11 @@
+[workspace]
+resolver = "3"
+members = ["crates/*"]
+
+[workspace.package]
+edition = "2024"
+version = "0.1.0"
+
+[workspace.dependencies]
+clap = { version = "4.6.7", features = ["derive"] }
+commands = { path = "crates/commands" }
